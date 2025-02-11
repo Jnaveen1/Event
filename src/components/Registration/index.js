@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import './index.css'
 
 const RegistrationForm = () => {
   const [formData, setFormData] = useState({
@@ -61,7 +62,7 @@ const RegistrationForm = () => {
   
 
   return (
-    <div style={{ maxWidth: '400px', margin: 'auto', padding: '20px' }}>
+    <div className='main-container' style={{ maxWidth: '400px', margin: 'auto', padding: '20px' }}>
       <h2>Register</h2>
       {error && <div style={{ color: 'red' }}>{error}</div>}
       {success && <div style={{ color: 'green' }}>{success}</div>}
